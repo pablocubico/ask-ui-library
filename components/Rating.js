@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react'
-import classnames from 'classnames'
 
 class Rating extends Component {
   constructor(props, context) {
@@ -46,6 +45,7 @@ class Rating extends Component {
         <span 
           onMouseOver={ this.onHover.bind(this, i + 1) } 
           style={ this.getTokenStyle(i) }
+          key={ i }
         >
           &#9733;
         </span>

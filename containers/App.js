@@ -1,14 +1,14 @@
 import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import TextArea from '../components/TextArea'
+import FormComposer from '../components/FormComposer'
 
 class App extends Component {
   render() {
     const { todos, actions } = this.props
     return (
       <div>
-        <TextArea />
+        <FormComposer />
       </div>
     )
   }
